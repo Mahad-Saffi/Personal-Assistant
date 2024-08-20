@@ -42,7 +42,7 @@ def listen(duration):
 
 
 def ask_wolframalpha(query):
-    api_key = '634WYV-KU3KK58AV6'
+    api_key = <your_api_key_of_wolframaalpha>
     url = f"http://api.wolframalpha.com/v1/result?i={query}&appid={api_key}"
     try:
         response = requests.get(url)
@@ -54,7 +54,7 @@ def ask_wolframalpha(query):
 
 
 def news():
-    news_api = '917ac98d5aa94909b8839cd682271a49'
+    news_api = <Your_news_api_key>
     current_date = datetime.date.today().strftime("%Y-%m-%d")
 
     url = f"https://newsapi.org/v2/everything?q=Apple&from={current_date}&sortBy=popularity&apiKey={news_api}"
